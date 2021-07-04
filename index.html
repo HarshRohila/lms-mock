@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LMS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<meta name="lms-frontend/config/environment" content="%7B%22modulePrefix%22%3A%22lms-frontend%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22lms-frontend%22%2C%22version%22%3A%220.0.0%2B1e001f49%22%7D%2C%22firebase%22%3A%7B%22apiKey%22%3A%22AIzaSyArti82d9kk5q5p2MFG7oDjgW8Cfc9NPJc%22%2C%22authDomain%22%3A%22eastern-store-314815.firebaseapp.com%22%2C%22projectId%22%3A%22eastern-store-314815%22%2C%22storageBucket%22%3A%22eastern-store-314815.appspot.com%22%2C%22messagingSenderId%22%3A%22897209154484%22%2C%22appId%22%3A%221%3A897209154484%3Aweb%3Ab7ca1fbe8a88c1344310e1%22%7D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-a11y-testing%22%3A%7B%22componentOptions%22%3A%7B%22turnAuditOff%22%3Atrue%2C%22excludeAxeCore%22%3Atrue%2C%22axeOptions%22%3A%7B%22iframes%22%3Afalse%2C%22reporter%22%3A%22v2%22%2C%22resultTypes%22%3A%5B%22violations%22%5D%2C%22rules%22%3A%7B%22duplicate-id%22%3A%7B%22enabled%22%3Afalse%7D%2C%22duplicate-id-active%22%3A%7B%22enabled%22%3Afalse%7D%2C%22duplicate-id-aria%22%3A%7B%22enabled%22%3Afalse%7D%7D%7D%7D%7D%2C%22historySupportMiddleware%22%3Atrue%7D" />
+  <link integrity="" rel="stylesheet" href="assets/vendor-724fa094b5e406afbe01dc32c0840b66.css">
+  <link integrity="" rel="stylesheet" href="assets/lms-frontend-154dd0a2ee8d8d777d8e54d6f8f60b4e.css">
+  <!-- Filepond stylesheet -->
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/css/nucleo-c7235a5760cc5c45e999b84b9861c822.css" type="text/css" integrity="sha256-UqWwYLXtkkmQ+jI2ad9U5EwTUIBAR8DHH9l3WenyVaY= sha512-K3gZW4/08c84929J913TYiNmWBZ7k7UrPKEQJTDkyU9/B8wa73dlC6M8H74dH1FaNWbda1P1QkLbCZqiHZINRA==" >
+  <link rel="stylesheet" href="assets/vendor/css/fontawesome/all.min-500d1a92f875b1d96d37a3a3f8f0438c.css" type="text/css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0= sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" >
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="assets/vendor/css/argon-e897fa48dfa217cb0b0a33c5dfbe69f0.css?v=1.2.0" type="text/css">
+  
+</head>
+
+<body>
+  
+  <script src="assets/vendor-6b4f1abc25f89386a5c9941caa5dcc37.js" integrity="sha256-q5tWzR/Mtta1n5ky8kfbMyyJPZE55qKOm5fhnbRBoDE= sha512-UU0XPldX0N1ZNG9TGBsQGpST+KhmgJ5Rt4bGOYB/NxjiDAGdZD8vbNAoS9hRPvXzQ6k1FF1kg1/ORTjYviehOA==" ></script>
+  <script src="assets/lms-frontend-c1ae1f4bb0cdd8eb5244afdbe6cdab03.js" integrity="sha256-bXufAp8GI3LBKlZr6br5GEQK03UhsCQ+jaDRHfzjK4k= sha512-VNIfMvo5yfxXwQjLkFDb5OROQuHjtt4fbQ8zTDWalSXE163vf9MEDJZI6zfbvarfA8UOlzECmNW4zqTrvZzE7Q==" ></script>
+  <div id="ember-basic-dropdown-wormhole"></div>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="assets/vendor/jquery/dist/jquery.min-220afd743d9e9643852e31a135a9f3ae.js" integrity="sha256-w6GIiiN8zOApNuwbg2pnoogvsHKK3IvP6PiJ7KWZA4s= sha512-DBHbYaxetX2Urh01QQ+fZEAVY2Ka9aGX4GyqtNcrcjAAJDnSsfRKZVyg7FSDDSqps/T2sF6BRdu3LmOOTupFuw==" ></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min-a5334e475209f965b4862f3bedf32618.js" integrity="sha256-pXhlJcyu3KSYs3S3AzdiHGON+COBOE4xDcc9Z8fkjHQ= sha512-Nc7TKSFTiC3J5LY9mt5OaDi0o0QkKCcJQzCI28AHubCafeqiqYYw7qzZUeDFxehcOElhdkh6AWjWgyKr61pXRw==" ></script>
+  <script src="assets/vendor/js-cookie/js.cookie-8ff1c89f24a8ca6f91f77389a0b70449.js" integrity="sha256-CVPh08nQR5f3MqLhu0LCX/vOQBu/U1xGkozEuSlh8t8= sha512-DZ1maYJ5j9mc3hEM0C+2JTDTLJ+8Ez55hm89aPoImbm14mBsWWdOt19MQfnxXSsbP/Ri4CkwLCx7lYevXEGFsQ==" ></script>
+  <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min-68506e75381112e7c76fd12fa62dc805.js" integrity="sha256-l2HR1IammgoiI+hUUOHeNFTkaH55gkXMZ2QN8Cj1BFU= sha512-hKsgaQU13ItWsjFJ/5oWxB1JD4PkuCsH1d8Ith2FS6SM99MLYBLMHMPGCnCsW+iCROsLGHDuSm9NAn+iTEniAA==" ></script>
+  <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min-344b87825f9685f364a59614191fed2b.js" integrity="sha256-yUc+EfH7v7kj+pTL4vuapKG31nWlt59XAopm4IgOoIw= sha512-5TbkZkZZKxyaIXA/4PMcP8xlRtxq3Gp64/x+JpeqLKVXgXpInON1Oi+bher+rnBYYBaZTgQ+QhQzKnaurOe+JQ==" ></script>
+  <!-- Argon JS -->
+  <script src="assets/vendor/argon/argon-6a9f2cd2619c0957d6236e0a6a6f031b.js?v=1.2.0"></script>
+  <script src="https://cdn.tiny.cloud/1/i9wmqk1iay2cj2hhq1kgbcfu1csi5ias3rxo72nfcuaxq4o1/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" referrerpolicy="origin"></script>
+</body>
+
+</html>
