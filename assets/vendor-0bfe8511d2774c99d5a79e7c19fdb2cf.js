@@ -6284,7 +6284,7 @@ e.id?(a.data.id=e.id,this.get("_visitedRecordIds")[e.id]={}):(a.data.attributes|
 for(let t in a.data.relationships)this.get("_visitedRecordIds")[t]&&delete a.data.relationships[t]
 return a.data.relationships==={}&&delete a.data.relationships,a.data},serializeHasMany(){this._super(...arguments),this.serializeRelationship(...arguments)},serializeBelongsTo(){this._super(...arguments),this.serializeRelationship(...arguments)},updateRecord(e,t){if(void 0!==e.attributes&&void 0!==e.attributes.__id__){e.type=(0,a.singularize)(e.type)
 const r=t.peekAll(e.type).filterBy("currentState.stateName","root.loaded.created.uncommitted").findBy("_internalModel."+Ember.GUID_KEY,e.attributes.__id__)
-r&&(r.set("id",e.id),r._internalModel.id=e.id,r._internalModel.flushChangedAttributes(),r._internalModel.adapterWillCommit(),t.didSaveRecord(r._internalModel))}return e},normalizeSaveResponse(e,a,t){const r=t.data.relationships||[]
+r&&(r.set("id",e.id),r._internalModel.id=e.id,r._internalModel.adapterWillCommit(),r._internalModel.adapterDidCommit(),r._internalModel.adapterWillCommit(),t.didSaveRecord(r._internalModel))}return e},normalizeSaveResponse(e,a,t){const r=t.data.relationships||[]
 let n={}
 if(t.included&&(n=t.included.reduce(((e,a)=>(e[a.id]=a,e)),{})),Object.keys(r).forEach((a=>{let t=r[a].data
 t&&this.normalizeRelationship(t,e,n)})),t.included)for(let i of t.included)this.updateRecord(i,e)
@@ -6723,7 +6723,7 @@ return{message:new a.FormatMessage(e),relative:new a.FormatRelative(e),number:ne
 function l(e){return function(a,t){let r
 return r=t&&t.locale?this._localeWithDefault(t.locale):Ember.get(this,"locale"),this._formatters[e].format(r,a,t)}}e.default=s})),define("ember-intl/translations",["exports"],(function(e){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
-e.default=[["en-us",{components:{"module-form":{"create-module":"Create Module"},"topics-edit-page":{topics:{add:"Add Another Topic",remove:"Remove"}}},price_banner:"The {product} costs {price, number, ::currency/USD}"}]]})),define("ember-load-initializers/index",["exports","require"],(function(e,a){"use strict"
+e.default=[["en-us",{components:{"file-uploader":{"drag-msg":"Drag File to Upload"},"module-form":{"create-module":"Create Module"},"topics-edit-page":{topics:{add:"Add Another Topic",remove:"Remove","title-label":"Topic Title"}}},price_banner:"The {product} costs {price, number, ::currency/USD}"}]]})),define("ember-load-initializers/index",["exports","require"],(function(e,a){"use strict"
 function t(e){var t=(0,a.default)(e,null,null,!0)
 if(!t)throw new Error(e+" must export an initializer.")
 var r=t.default
